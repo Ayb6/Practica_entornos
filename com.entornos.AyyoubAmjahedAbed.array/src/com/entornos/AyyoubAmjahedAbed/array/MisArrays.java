@@ -33,5 +33,14 @@ public abstract class MisArrays {
         return max;
     }
     
+    public static int minimo(int[] numeros) {
+        int min = numeros[0];
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] < min) {
+                min = numeros[i];
+            }
+        }
+        return min;
+    }
 }
 
