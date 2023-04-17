@@ -1,0 +1,14 @@
+package com.entornos.Ayyoub.texto;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestRectangulo {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.entornos.Ayyoub.texto;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+import com.entornos.Ayyoub.poligonos.Rectangulo;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class TestRectangulo {
+	
+	Rectangulo rectangulo;
+	
+	@BeforeAll
+	void inicializar() {
+		rectangulo = new Rectangulo(3,2);
+	}
+	
+	@Test
+	void testArea() {
+		int resultado1 = rectangulo.area();
+		int resultadoEsperado1 = 6;
+		assertEquals(resultadoEsperado1, resultado1);
+	}
+	
+	@Test
+	void testPerimetro(){
+		int resultado1 = rectangulo.perimetro();
+		int resultadoEsperado1 = 12;
+		assertEquals(resultadoEsperado1, resultado1);
+	}
+}

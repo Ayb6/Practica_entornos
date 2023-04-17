@@ -1,0 +1,27 @@
+package com.entornos.Ayyoub.poligonos;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class TestRectangulo {
+	
+	Rectangulo rectangulo;
+	
+	@BeforeAll
+	void inicializar() {
+		rectangulo = new Rectangulo(3,2);
+	}
+	
+	@Test
+	void testArea() {
+		int resultado1 = 
+	}
+	
+	@Test
+	void testPerimetro(){
+	}
+}
