@@ -22,6 +22,16 @@ public abstract class MisArrays {
             return numeros[longitud / 2];
         }
     }
-
+    
+    public static int maximo(int[] numeros) {
+        int max = numeros[0];
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] > max) {
+                max = numeros[i];
+            }
+        }
+        return max;
+    }
+    
 }
 
